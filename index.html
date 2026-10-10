@@ -1,129 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন — শিক্ষা সহায়তা, বৃক্ষরোপণ ও কবরস্থান রক্ষণাবেক্ষণের জনকল্যাণমূলক উদ্যোগ।">
-<title>সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন — রসিদ সিস্টেম</title>
 <style>
-:root{--green:#126b45;--deep:#06452d;--blue:#1758a6;--gold:#d8b84f;--cream:#f7fbf7;--ink:#17251e;--muted:#58675e}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans Bengali","Nirmala UI","Vrinda",system-ui,sans-serif;color:var(--ink);background:#f5f8f5;line-height:1.75}
-a{color:inherit}.topbar{background:var(--deep);color:#fff;text-align:center;padding:8px 14px;font-size:.92rem}
-header{background:linear-gradient(120deg,#e7f7ec,#fff 60%,#e8f3ff);border-bottom:4px solid var(--gold)}
-.wrap{max-width:1100px;margin:auto;padding:0 18px}.hero{padding:38px 0 34px;display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:center}
-.kicker{color:var(--green);font-weight:800;letter-spacing:.02em}.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.22;color:var(--deep);margin:8px 0 14px}.hero p{font-size:1.12rem;color:#3e5147;max-width:700px}
-.logo{width:170px;height:170px;margin:auto;border-radius:50%;background:linear-gradient(145deg,#fff,#d9f0df);border:5px solid #a5d5b4;display:grid;place-items:center;color:var(--green);font-size:5rem;box-shadow:0 10px 25px #174d3020}
-.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{background:#e1f2e6;border:1px solid #c2e1cb;color:#155a3b;border-radius:99px;padding:6px 12px;font-size:.92rem;font-weight:700}
-nav{background:#fff;border-bottom:1px solid #dce7df;position:sticky;top:0;z-index:5}nav .wrap{display:flex;gap:18px;overflow-x:auto;padding-top:10px;padding-bottom:10px}nav a{text-decoration:none;color:#1b5a3c;font-weight:700;white-space:nowrap;font-size:.95rem}
-section{padding:34px 0}.section-title{font-size:1.75rem;color:var(--deep);margin:0 0 18px;line-height:1.35}.section-title span{display:inline-block;width:9px;height:29px;background:var(--gold);border-radius:8px;margin-right:9px;vertical-align:middle}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid #dfe9e2;border-radius:18px;padding:20px;box-shadow:0 5px 16px #123b2010}.card h3{margin:0 0 8px;color:var(--green);font-size:1.15rem}.icon{font-size:1.7rem}.soft{background:#edf6ef}.members{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;list-style:none;padding:0;margin:0}.members li{padding:10px 13px;background:#fff;border:1px solid #dce8df;border-radius:10px;display:flex;gap:10px;align-items:flex-start}.num{background:#e0f1e5;color:var(--deep);font-weight:800;border-radius:50%;width:29px;height:29px;flex:0 0 29px;text-align:center;line-height:29px}
-.money{font-size:1.7rem;color:#b4234b;font-weight:900;line-height:1.3}.note{background:#fff8dc;border-left:4px solid #d7ae2e;padding:13px 15px;border-radius:8px;color:#5c4b12}
-.steps{counter-reset:item;list-style:none;padding:0}.steps li{counter-increment:item;margin:10px 0;padding:12px 14px 12px 52px;background:#fff;border-radius:10px;position:relative;border:1px solid #e0e8e2}.steps li:before{content:counter(item);position:absolute;left:13px;top:12px;width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:800}
-.activity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.activity{min-height:130px;border:2px dashed #bad7c2;border-radius:16px;background:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:18px;color:#43604d}.activity strong{color:var(--green)}
-.contact{background:linear-gradient(130deg,#0a5034,#176c48);color:#fff;border-radius:20px;padding:24px}.contact h2{color:#fff}.contact p{margin:5px 0}.placeholder{opacity:.85}
-footer{background:#063d29;color:#e8f7ec;text-align:center;padding:25px 18px;margin-top:30px}footer small{display:block;opacity:.8;margin-top:8px}
-.btn{display:inline-block;text-decoration:none;background:var(--green);color:white;border-radius:99px;padding:10px 17px;font-weight:800;margin-top:8px}.btn:hover{background:var(--deep)}
-@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center;padding:28px 0}.logo{grid-row:1;width:125px;height:125px;font-size:3.8rem}.pills{justify-content:center}.grid{grid-template-columns:1fr}.members{grid-template-columns:1fr}.activity-grid{grid-template-columns:1fr}.section-title{font-size:1.5rem}}
-@media print{nav{display:none}.card{box-shadow:none}body{background:white}}
+:root{--green:#126b4b;--pale:#eef8f2;--ink:#17231d;--muted:#5e6b64;--line:#d8e4dc}
+*{box-sizing:border-box}body{margin:0;background:#f4f7f5;color:var(--ink);font-family:system-ui,"Noto Sans Bengali",sans-serif}
+header{background:var(--green);color:white;padding:22px 16px;text-align:center}header h1{font-size:22px;margin:0 0 6px}header p{margin:0;font-size:14px}
+main{max-width:980px;margin:18px auto;padding:0 12px 40px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+button,.btn{border:0;border-radius:9px;padding:11px 14px;background:var(--green);color:white;font-size:15px;font-weight:600;cursor:pointer}
+.tabs button{background:#e2eee7;color:#164d38}.tabs button.active{background:var(--green);color:white}
+.panel{background:white;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 2px 8px #183d2510}
+h2{font-size:19px;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label{display:block;font-size:14px;font-weight:650;margin-bottom:5px}input,select,textarea{width:100%;border:1px solid #bdcdc3;border-radius:8px;padding:11px;font-size:16px;background:white;color:var(--ink)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.secondary{background:#e6eee9;color:#174a36}.danger{background:#a33333}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.stat{background:var(--pale);padding:13px;border-radius:10px}.stat small{display:block;color:var(--muted);font-size:12px}.stat strong{font-size:21px;display:block;margin-top:5px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:9px 7px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f2f7f3}
+.table-wrap{overflow-x:auto}.empty{color:var(--muted);padding:14px 0}.note{font-size:13px;color:var(--muted);line-height:1.55}
+.receipt{max-width:720px;margin:0 auto;border:2px solid var(--green);padding:22px;border-radius:8px;background:white}.receipt h2{text-align:center;margin:0 0 4px}.receipt .sub{text-align:center;margin:0 0 18px;color:#43584c}.receipt-row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed #b7c8bd}.receipt-row span:first-child{color:#52645a}.signs{display:flex;justify-content:space-between;gap:20px;margin-top:36px}.signs span{border-top:1px solid #68796f;padding-top:7px;width:42%;text-align:center;font-size:13px}
+.hidden{display:none!important}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat strong{font-size:19px}.panel{padding:13px}header h1{font-size:20px}.receipt{padding:14px}}
+@media print{body{background:white}.no-print,header,main>.tabs,main>.panel:not(#receiptPanel){display:none!important}main{margin:0;padding:0;max-width:none}#receiptPanel{display:block!important;border:0;padding:0;margin:0;box-shadow:none}.receipt{border:2px solid #126b4b;max-width:none;border-radius:0}.receipt button{display:none}}
 </style>
 </head>
 <body>
-<div class="topbar">মানবসেবা • শিক্ষা সহায়তা • বৃক্ষরোপণ • কবরস্থান রক্ষণাবেক্ষণ</div>
-<header>
-  <div class="wrap hero">
-    <div>
-      <div class="kicker">একটি স্বেচ্ছাসেবামূলক জনকল্যাণ উদ্যোগ</div>
-      <h1>সদকায়ে জারিয়া<br>কল্যাণ ফাউন্ডেশন</h1>
-      <p>মানুষের কল্যাণে একসাথে কাজ করি—অসহায় শিক্ষার্থীদের পাশে দাঁড়াই, গাছ লাগাই, পরিচ্ছন্ন ও সুন্দর পরিবেশ গড়ে তুলি।</p>
-      <div class="pills"><span class="pill">🤝 মানবসেবা</span><span class="pill">📚 শিক্ষা সহায়তা</span><span class="pill">🌱 বৃক্ষরোপণ</span><span class="pill">🪦 কবরস্থান পরিচর্যা</span></div>
-      <a class="btn" href="#uddeshyo">আমাদের উদ্দেশ্য দেখুন ↓</a>
-    </div>
-    <div class="logo" aria-label="গাছের প্রতীক">🌱</div>
-  </div>
-</header>
-<nav><div class="wrap"><a href="#porichiti">পরিচিতি</a><a href="#uddeshyo">উদ্দেশ্য</a><a href="#sodosso">সদস্য</a><a href="#chada">চাঁদা ও তহবিল</a><a href="#hisab">হিসাবের নিয়ম</a><a href="#karjokrom">কার্যক্রম</a><a href="#jogajog">যোগাযোগ</a></div></nav>
-
+<header><h1>সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন</h1><p>চাঁদা ও অনুদান গ্রহণ • সদস্যভিত্তিক হিসাব • রসিদ</p></header>
 <main>
-<section id="porichiti"><div class="wrap">
-  <h2 class="section-title"><span></span>ফাউন্ডেশনের পরিচিতি</h2>
-  <div class="card"><p><strong>সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন</strong> একটি মানবিক ও সমাজকল্যাণমূলক উদ্যোগ। গরিব ও এতিম ছাত্র-ছাত্রীদের সাহায্য, বৃক্ষরোপণ এবং কবরস্থান রক্ষণাবেক্ষণের মাধ্যমে সমাজের কল্যাণে কাজ করাই আমাদের লক্ষ্য। সদস্যদের সম্মিলিত সহযোগিতা, স্বচ্ছতা ও জবাবদিহির ভিত্তিতে কার্যক্রম পরিচালনার প্রত্যয় নিয়ে এই উদ্যোগ গড়ে উঠেছে।</p></div>
-</div></section>
+<div class="tabs no-print">
+<button class="active" data-tab="entry">রসিদ তৈরি</button>
+<button data-tab="history">জমার ইতিহাস</button>
+<button data-tab="summary">মোট হিসাব ও বকেয়া</button>
+</div>
 
-<section id="uddeshyo" class="soft"><div class="wrap">
-  <h2 class="section-title"><span></span>আমাদের উদ্দেশ্য</h2>
-  <div class="grid">
-    <article class="card"><div class="icon">📚</div><h3>শিক্ষা সহায়তা</h3><p>অসহায়, দরিদ্র ও এতিম শিক্ষার্থীদের প্রয়োজন অনুযায়ী শিক্ষা উপকরণ, পড়াশোনার খরচ বা জরুরি সহায়তা দেওয়া।</p></article>
-    <article class="card"><div class="icon">🌳</div><h3>বৃক্ষরোপণ</h3><p>পরিবেশের ভারসাম্য রক্ষা ও সবুজায়নের জন্য গাছ লাগানো এবং রোপিত গাছের পরিচর্যা করা।</p></article>
-    <article class="card"><div class="icon">🪦</div><h3>কবরস্থান রক্ষণাবেক্ষণ</h3><p>কবরস্থান পরিষ্কার-পরিচ্ছন্ন রাখা এবং প্রয়োজনীয় পরিচর্যা ও রক্ষণাবেক্ষণে সহযোগিতা করা।</p></article>
-  </div>
-</div></section>
+<section id="entry" class="panel no-print">
+<h2>নতুন জমা এন্ট্রি</h2>
+<div class="grid">
+<div><label for="member">সদস্যের নাম</label><select id="member"></select></div>
+<div><label for="date">জমার তারিখ</label><input id="date" type="date"></div>
+<div><label for="amount">জমার পরিমাণ (৳)</label><input id="amount" type="number" min="1" step="1" value="85"></div>
+<div><label for="kind">জমার ধরন</label><select id="kind"><option>মাসিক চাঁদা</option><option>বার্ষিক চাঁদা</option><option>বিশেষ অনুদান</option></select></div>
+<div><label for="method">টাকা গ্রহণের মাধ্যম</label><select id="method"><option>নগদ</option><option>বিকাশ</option><option>নগদ/মোবাইল ব্যাংকিং</option><option>ব্যাংক</option></select></div>
+<div><label for="period">কোন মাস/সময় বাবদ</label><input id="period" placeholder="যেমন: অক্টোবর ২০২৬"></div>
+<div><label for="receivedBy">টাকা গ্রহণকারীর নাম</label><input id="receivedBy" placeholder="গ্রহণকারীর নাম"></div>
+<div><label for="note">মন্তব্য (ঐচ্ছিক)</label><input id="note" placeholder="প্রয়োজনে লিখুন"></div>
+</div>
+<div class="actions"><button id="saveBtn">রসিদ তৈরি ও জমা সংরক্ষণ</button><button class="secondary" id="clearBtn" type="button">ফর্ম খালি করুন</button></div>
+<p class="note">ডিফল্ট মাসিক চাঁদা ৳৮৫। বার্ষিক চাঁদা ৳১,০০০ নির্ধারণের আগে সদস্যদের সিদ্ধান্ত নিশ্চিত করুন; ৳৮৫ × ১২ = ৳১,০২০।</p>
+</section>
 
-<section id="sodosso"><div class="wrap">
-  <h2 class="section-title"><span></span>প্রাথমিক সদস্য তালিকা (১৩ জন)</h2>
-  <ol class="members">
-    <li><span class="num">১</span><span>মোঃ নাঈম ইসলাম</span></li>
-    <li><span class="num">২</span><span>মোহাম্মদ মাঈনউদ্দিন মুন্সী</span></li>
-    <li><span class="num">৩</span><span>মোঃ মাহবুব হক সালেহি</span></li>
-    <li><span class="num">৪</span><span>মোঃ কাইয়ুম</span></li>
-    <li><span class="num">৫</span><span>মোঃ ইসমাঈল হোসাইন (তাফিম)</span></li>
-    <li><span class="num">৬</span><span>মাহমুদুল হাসান</span></li>
-    <li><span class="num">৭</span><span>মোহাম্মদ ফাহমিদ</span></li>
-    <li><span class="num">৮</span><span>মোঃ সোহেল রানা</span></li>
-    <li><span class="num">৯</span><span>মোহাম্মদ সবুজ সরকার</span></li>
-    <li><span class="num">১০</span><span>ওমর ফারুক (বাবু)</span></li>
-    <li><span class="num">১১</span><span>হোসনা আক্তার বিউটি</span></li>
-    <li><span class="num">১২</span><span>নুসরাত জাহান নোভা</span></li>
-    <li><span class="num">১৩</span><span>মোহাম্মদ আল-আমিন মুন্সী</span></li>
-  </ol>
-  <p class="placeholder">নোট: নামের বানান সদস্যদের অনুমোদনের আগে যাচাই করে নিন।</p>
-</div></section>
+<section id="receiptPanel" class="panel hidden">
+<div class="receipt" id="receipt">
+<h2>সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন</h2>
+<p class="sub">চাঁদা / অনুদান গ্রহণের রসিদ</p>
+<div class="receipt-row"><span>রসিদ নম্বর</span><strong id="rNo"></strong></div>
+<div class="receipt-row"><span>সদস্যের নাম</span><strong id="rMember"></strong></div>
+<div class="receipt-row"><span>জমার ধরন</span><strong id="rKind"></strong></div>
+<div class="receipt-row"><span>পরিমাণ</span><strong id="rAmount"></strong></div>
+<div class="receipt-row"><span>তারিখ</span><strong id="rDate"></strong></div>
+<div class="receipt-row"><span>পেমেন্টের মাধ্যম</span><strong id="rMethod"></strong></div>
+<div class="receipt-row"><span>যে মাস/সময় বাবদ</span><strong id="rPeriod"></strong></div>
+<div class="receipt-row"><span>মন্তব্য</span><strong id="rNote"></strong></div>
+<div class="signs"><span>টাকা প্রদানকারীর স্বাক্ষর</span><span>গ্রহণকারীর স্বাক্ষর: <b id="rReceiver"></b></span></div>
+<p class="note" style="text-align:center;margin-top:22px">আপনার অবদান কল্যাণমূলক কাজে ব্যয় হবে। রসিদটি সংরক্ষণ করুন।</p>
+</div>
+<div class="actions no-print"><button id="printBtn">PDF সংরক্ষণ / প্রিন্ট</button><button class="secondary" id="newBtn">নতুন রসিদ</button></div>
+<p class="note no-print">PDF করতে Print চাপুন, তারপর Android-এর প্রিন্ট অপশনে “Save as PDF” নির্বাচন করুন।</p>
+</section>
 
-<section id="chada" class="soft"><div class="wrap">
-  <h2 class="section-title"><span></span>চাঁদা ও তহবিল</h2>
-  <div class="grid">
-    <article class="card"><h3>মাসিক চাঁদা</h3><div class="money">৳ ৮৫</div><p>প্রতি সদস্যের প্রস্তাবিত মাসিক চাঁদা।</p></article>
-    <article class="card"><h3>বার্ষিক চাঁদা</h3><div class="money">৳ ১,০০০</div><p>সদস্যদের আলোচনার ভিত্তিতে চূড়ান্ত হবে।</p></article>
-    <article class="card"><h3>চাঁদা সংগ্রহের সময়</h3><div class="money" style="font-size:1.35rem">নভেম্বর–ডিসেম্বর</div><p>প্রতি বছর এই দুই মাসে চাঁদা সংগ্রহের পরিকল্পনা।</p></article>
-  </div>
-  <p class="note"><strong>গুরুত্বপূর্ণ:</strong> মাসে ৮৫ টাকা দিলে বছরে ১,০২০ টাকা হয়। বার্ষিক ১,০০০ টাকার প্রস্তাবের সঙ্গে এই পার্থক্য সদস্যদের আলোচনায় সমাধান করে চূড়ান্ত নিয়ম লিখিতভাবে ঠিক করুন।</p>
-  <p>অনুদান গ্রহণ করা হলে অনুদানের পরিমাণ, তারিখ, প্রদানকারীর নাম (প্রদানকারী সম্মত হলে) এবং অর্থ ব্যবহারের বিবরণ লিখিতভাবে সংরক্ষণ করা হবে। কোনো ব্যাংক/মোবাইল নম্বর এখানে দেওয়া হয়নি—অনুমোদিত যোগাযোগ ও অর্থ গ্রহণের তথ্য পরে যোগ করুন।</p>
-</div></section>
+<section id="history" class="panel hidden">
+<h2>সদস্যের জমার ইতিহাস</h2>
+<div class="grid no-print"><div><label for="filterMember">সদস্য দিয়ে খুঁজুন</label><select id="filterMember"><option value="">সব সদস্য</option></select></div><div><label for="search">রসিদ নম্বর / মাস / মন্তব্য</label><input id="search" placeholder="খুঁজুন"></div></div>
+<div class="table-wrap"><table><thead><tr><th>রসিদ</th><th>তারিখ</th><th>সদস্য</th><th>ধরন/সময়</th><th>টাকা</th><th class="no-print">কাজ</th></tr></thead><tbody id="historyBody"></tbody></table></div>
+<p id="historyEmpty" class="empty hidden">এখনো কোনো জমার রেকর্ড নেই।</p>
+<div class="actions no-print"><button class="secondary" id="exportBtn">হিসাব CSV ডাউনলোড</button><button class="danger" id="deleteAllBtn">সব রেকর্ড মুছুন</button></div>
+</section>
 
-<section id="hisab"><div class="wrap">
-  <h2 class="section-title"><span></span>মিটিং ও হিসাবের নিয়ম</h2>
-  <div class="grid">
-    <article class="card"><div class="icon">🖥️</div><h3>ত্রৈমাসিক জুম মিটিং</h3><p>প্রতি ৩ মাসে একবার অনলাইন Zoom মিটিং হবে। মিটিংয়ের তারিখ, সময় ও আলোচ্যসূচি সদস্যদের আগে জানানো হবে।</p></article>
-    <article class="card"><div class="icon">📊</div><h3>ত্রৈমাসিক হিসাব</h3><p>প্রতি ৩ মাসে আয়-ব্যয়ের হিসাব সদস্যদের সামনে উপস্থাপন করা হবে।</p></article>
-    <article class="card"><div class="icon">🧾</div><h3>রসিদ ও নথি</h3><p>প্রতিটি লেনদেনের তারিখ, পরিমাণ, কারণ এবং রসিদ/ভাউচার সংরক্ষণ করা হবে।</p></article>
-  </div>
-  <ol class="steps">
-    <li>তহবিল কেবল ফাউন্ডেশনের অনুমোদিত কল্যাণমূলক কাজে ব্যবহার করতে হবে।</li>
-    <li>আয় ও ব্যয়ের হিসাব খাতা বা ডিজিটাল শিটে হালনাগাদ রাখতে হবে।</li>
-    <li>বড় বা জরুরি ব্যয়ের বিষয়ে সদস্যদের সম্মতি নিতে হবে; জরুরি ব্যয় হলে পরবর্তী মিটিংয়ে ব্যাখ্যা দিতে হবে।</li>
-    <li>প্রতি তিন মাসের হিসাব ও কাজের অগ্রগতি সদস্যদের সঙ্গে শেয়ার করতে হবে।</li>
-  </ol>
-</div></section>
-
-<section id="karjokrom" class="soft"><div class="wrap">
-  <h2 class="section-title"><span></span>ছবি ও কার্যক্রম</h2>
-  <p>ফাউন্ডেশনের প্রকৃত কার্যক্রমের ছবি এখানে যোগ করুন। কাজের ছবি প্রকাশের আগে সংশ্লিষ্ট ব্যক্তির সম্মতি নিন, বিশেষ করে শিশু ও শিক্ষার্থীদের ছবি ব্যবহারের ক্ষেত্রে।</p>
-  <div class="activity-grid">
-    <div class="activity"><div class="icon">📚</div><strong>শিক্ষা সহায়তা</strong><span>ছবি/কার্যক্রমের বিবরণ পরে যোগ করুন</span></div>
-    <div class="activity"><div class="icon">🌱</div><strong>বৃক্ষরোপণ</strong><span>ছবি/কার্যক্রমের বিবরণ পরে যোগ করুন</span></div>
-    <div class="activity"><div class="icon">🧹</div><strong>কবরস্থান পরিচর্যা</strong><span>ছবি/কার্যক্রমের বিবরণ পরে যোগ করুন</span></div>
-  </div>
-</div></section>
-
-<section id="jogajog"><div class="wrap">
-  <div class="contact">
-    <h2 class="section-title">যোগাযোগ করুন</h2>
-    <p><strong>ফাউন্ডেশন:</strong> সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন</p>
-    <p><strong>ঠিকানা:</strong> <span class="placeholder">[এখানে এলাকার নাম ও ঠিকানা যোগ করুন]</span></p>
-    <p><strong>মোবাইল:</strong> <span class="placeholder">[অনুমোদিত যোগাযোগ নম্বর যোগ করুন]</span></p>
-    <p><strong>ইমেইল / ফেসবুক পেজ:</strong> <span class="placeholder">[থাকলে যোগ করুন]</span></p>
-  </div>
-</div></section>
+<section id="summary" class="panel hidden">
+<h2>মোট হিসাব ও বকেয়া</h2>
+<div class="stats">
+<div class="stat"><small>মোট জমা</small><strong id="totalPaid">৳০</strong></div>
+<div class="stat"><small>রেকর্ড সংখ্যা</small><strong id="recordCount">০</strong></div>
+<div class="stat"><small>সদস্য সংখ্যা</small><strong>১৩</strong></div>
+</div>
+<p class="note">বকেয়া হিসাবটি আনুমানিক: নির্বাচিত সময়ের জন্য মাসিক ৳৮৫ × ১২ মাস ধরে হিসাব করা হয়। নিচের “প্রত্যাশিত মাস” পরিবর্তন করে আপনার হিসাবের সময় ঠিক করুন। কোনো সদস্য আগে থেকে যুক্ত হওয়ার কারণে কম মাসের চাঁদা দিতে হলে প্রত্যাশিত মাসও সে অনুযায়ী দিন।</p>
+<div class="grid"><div><label for="expectedMonths">প্রতি সদস্যের প্রত্যাশিত মাস (১–১২)</label><input id="expectedMonths" type="number" min="1" max="12" value="12"></div><div><label for="monthlyRate">মাসিক চাঁদা (৳)</label><input id="monthlyRate" type="number" min="0" value="85"></div></div>
+<div class="table-wrap" style="margin-top:12px"><table><thead><tr><th>সদস্য</th><th>মোট জমা</th><th>প্রত্যাশিত</th><th>বকেয়া</th></tr></thead><tbody id="summaryBody"></tbody></table></div>
+</section>
+<p class="note">গুরুত্বপূর্ণ: এই সংস্করণ রেকর্ডগুলো এই ডিভাইসের এই ব্রাউজারে সংরক্ষণ করে। ব্রাউজারের ডেটা মুছে গেলে রেকর্ড হারাতে পারে; অন্য মোবাইল বা অন্য সদস্যের কাছে স্বয়ংক্রিয়ভাবে সিঙ্ক হবে না। বাস্তব ব্যবহারের আগে নিয়মিত CSV ব্যাকআপ রাখুন।</p>
 </main>
-<footer><strong>“ছোট ছোট সহযোগিতায় বড় পরিবর্তন সম্ভব”</strong><small>সদকায়ে জারিয়া কল্যাণ ফাউন্ডেশন • মানবতার কল্যাণে একসাথে</small></footer>
-</body>
-</html>
+<script>
+const MEMBERS=[
+"মোঃ নাঈম ইসলাম","মোহাম্মদ মাঈনউদ্দিন মুন্সী","মোঃ মাহবুব হক সালেহি","মোঃ কাইয়ুম",
+"মোঃ ইসমাঈল হোসাইন (তাফিম)","মাহমুদুল হাসান","মোহাম্মদ ফাহমিদ","মোঃ সোহেল রানা",
+"মোহাম্মদ সবুজ সরকার","ওমর ফারুক (বাবু)","হোসনা আক্তার বিউটি","নুসরাত জাহান নোভা","মোহাম্মদ আল-আমিন মুন্সী"
+];
+const KEY="sadakayeJariaReceiptsV1";
+let records=load(), lastReceipt=null;
+const $=id=>document.getElementById(id);
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return []}}
+function save(){localStorage.setItem(KEY,JSON.stringify(records))}
+function money(n){return "৳"+Number(n||0).toLocaleString("en-US")}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function initMembers(){
+  $("member").innerHTML=MEMBERS.map(m=>`<option>${esc(m)}</option>`).join("");
+  $("filterMember").innerHTML='<option value="">সব সদস্য</option>'+MEMBERS.map(m=>`<option>${esc(m)}</option>`).join("");
+  $("date").value=new Date().toLocaleDateString("en-CA");
+}
+function setTab(tab){
+ document.querySelectorAll(".tabs button").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));
+ ["entry","history","summary"].forEach(id=>$(id).classList.toggle("hidden",id!==tab));
+ if(tab==="history")renderHistory();if(tab==="summary")renderSummary();
+}
+document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>setTab(b.dataset.tab)));
+function makeReceipt(r){
+ lastReceipt=r;
+ ["rNo","rMember","rKind","rAmount","rDate","rMethod","rPeriod","rNote","rReceiver"].forEach(id=>$(id).textContent="");
+ $("rNo").textContent=r.no;$("rMember").textContent=r.member;$("rKind").textContent=r.kind;
+ $("rAmount").textContent=money(r.amount);$("rDate").textContent=r.date;$("rMethod").textContent=r.method;
+ $("rPeriod").textContent=r.period||"—";$("rNote").textContent=r.note||"—";$("rReceiver").textContent=r.receiver||"";
+ $("receiptPanel").classList.remove("hidden");
+ $("receiptPanel").scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("saveBtn").addEventListener("click",()=>{
+ const amount=Number($("amount").value);
+ if(!Number.isFinite(amount)||amount<=0){alert("সঠিক টাকার পরিমাণ লিখুন।");return}
+ const r={no:String(Date.now()).slice(-8),member:$("member").value,date:$("date").value,
+ amount,kind:$("kind").value,method:$("method").value,period:$("period").value.trim(),
+ receiver:$("receivedBy").value.trim(),note:$("note").value.trim()};
+ records.unshift(r);save();makeReceipt(r);renderHistory();renderSummary();
+});
+$("clearBtn").addEventListener("click",()=>{$("amount").value=85;$("period").value="";$("receivedBy").value="";$("note").value="";$("receiptPanel").classList.add("hidden")});
+$("printBtn").addEventListener("click",()=>window.print());
+$("newBtn").addEventListener("click",()=>{setTab("entry");$("receiptPanel").classList.add("hidden");window.scrollTo({top:0,behavior:"smooth"})});
+function renderHistory(){
+ const f=$("filterMember").value, q=$("search").value.trim().toLowerCase();
+ const rows=records.filter(r=>(!f||r.member===f)&&(!q||[r.no,r.period,r.note,r.member,r.kind].join(" ").toLowerCase().includes(q)));
+ $("historyBody").innerHTML=rows.map(r=>`<tr><td>${esc(r.no)}</td><td>${esc(r.date)}</td><td>${esc(r.member)}</td><td>${esc(r.kind)}<br><small>${esc(r.period||"")}</small></td><td>${money(r.amount)}</td><td class="no-print"><button class="secondary" data-reprint="${esc(r.no)}">রসিদ</button></td></tr>`).join("");
+ $("historyEmpty").classList.toggle("hidden",rows.length>0);
+ document.querySelectorAll("[data-reprint]").forEach(b=>b.addEventListener("click",()=>{const r=records.find(x=>x.no===b.dataset.reprint);if(r){makeReceipt(r);window.scrollTo({top:0,behavior:"smooth"})}}));
+}
+$("filterMember").addEventListener("change",renderHistory);$("search").addEventListener("input",renderHistory);
+function renderSummary(){
+ const total=records.reduce((s,r)=>s+Number(r.amount||0),0);
+ $("totalPaid").textContent=money(total);$("recordCount").textContent=records.length.toLocaleString("en-US");
+ const months=Math.max(1,Math.min(12,Number($("expectedMonths").value)||12)),rate=Math.max(0,Number($("monthlyRate").value)||0);
+ $("summaryBody").innerHTML=MEMBERS.map(m=>{const paid=records.filter(r=>r.member===m).reduce((s,r)=>s+Number(r.amount||0),0);const due=Math.max(0,months*rate-paid);return `<tr><td>${esc(m)}</td><td>${money(paid)}</td><td>${money(months*rate)}</td><td>${money(due)}</td></tr>`}).join("");
+}
+$("expectedMonths").addEventListener("input",renderSummary);$("monthlyRate").addEventListener("input",renderSummary);
+$("exportBtn").addEventListener("click",()=>{
+ const rows=[["Receipt No","Date","Member","Type","Amount BDT","Method","Period","Receiver","Note"],...records.map(r=>[r.no,r.date,r.member,r.kind,r.amount,r.method,r.period,r.receiver,r.note])];
+ const csv="\ufeff"+rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n");
+ const blob=new Blob([csv],{type:"text/csv;charset=utf-8;"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=url;a.download="sadakaye-jaria-receipts.csv";a.click();URL.revokeObjectURL(url);
+});
+$("deleteAllBtn").addEventListener("click",()=>{if(confirm("সতর্কতা: সব জমার রেকর্ড স্থায়ীভাবে মুছে ফেলবেন? আগে CSV ব্যাকআপ নিন।")){records=[];save();renderHistory();renderSummary()}});
+initMembers();renderHistory();renderSummary();
+</script>
+</body></html>
